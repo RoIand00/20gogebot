@@ -4,8 +4,7 @@ import random
 import re
 from data import theme_list
 
-# 봇의 토큰을 넣는 변수
-BOT_TOKEN = "MTMzMjI0Njg5NzY4Mjk0NDAyMg.GJ4zmS.WaP9LyCAIkmyerG4KF8BE-5y9H3RoRoib29LmM"
+BOT_TOKEN = ""
 
 # Bot 설정
 intents = discord.Intents.default()
