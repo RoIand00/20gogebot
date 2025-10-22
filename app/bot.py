@@ -59,7 +59,7 @@ async def theme_selection(ctx, *args):
         selected_themes = random.sample(filtered_themes, 7)
         selected_themes.sort(key=lambda x: x.get('difficulty', 0))
         
-        response = "🎲 주제 추첨 결과 🎲\n\n"
+        response = "🎲 주제 추첨 결과 🎲\n\n" 
         for i, theme in enumerate(selected_themes):
             response += f"{i + 1}. **{theme['theme']}** 주제가 나왔습니다. (난이도: {theme['difficulty']})\n"
         
