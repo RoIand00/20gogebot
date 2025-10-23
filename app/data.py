@@ -468,5 +468,5 @@ theme_list = [
         "theme": "로블록스", 
         "difficulty": 9.6, 
         "accuracy": "B"
-    }
+    },
 ]
