@@ -9,10 +9,11 @@ BOT_TOKEN = ""
 # Bot 설정
 intents = discord.Intents.default()
 intents.message_content = True
-bot = commands.Bot(command_prefix='!', intents=intents, help_command=None)
+bot = commands.Bot(command_prefix='$', intents=intents, help_command=None)
 
 @bot.event
 async def on_ready():
+    await bot.change_presence(activity=discord.Game(name="$도움말을 사용해 명령어를 알아보세요!"))
     print(f'{bot.user.name}이(가) 성공적으로 로그인했습니다. (ID: {bot.user.id})')
 
 @bot.command(name='도움말')
